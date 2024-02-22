@@ -43,7 +43,7 @@ def search():
 
 
 app = CTk()
-app.geometry("1000x1000")
+app.geometry("500x500")
 app.title("Weather App")
 
 city_text = StringVar()
@@ -51,15 +51,15 @@ city_entry = CTkEntry(app, width=200, textvariable=city_text)
 city_entry.pack(pady=20, padx=20)
 
 search_button = CTkButton(app, text="Search", command=search)
-search_button.pack(pady=20, padx=20)
+search_button.pack(pady=0, padx=20)
 
-location_label = CTkLabel(app, text="Location", font=('Bold', 20))
+location_label = CTkLabel(app, text="Location", font=('Bold', 25))
 location_label.pack(pady=20, padx=20)
 
-temperature_label = CTkLabel(app, text="" ,font=('Bold', 20))
-temperature_label.pack(pady=20, padx=20)  
+temperature_label = CTkLabel(app, text="" ,font=('Arial', 20))
+temperature_label.pack(pady=0, padx=20)  
 
-weather_desc_label = CTkLabel(app, text="", font =('Bold', 20))
+weather_desc_label = CTkLabel(app, text="", font =('Arial',20))
 weather_desc_label.pack(pady=20, padx=20)
 
 app.mainloop()
